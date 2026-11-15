@@ -11,28 +11,96 @@
 // 1. JOBS DATABASE (FILHAL BLANK HAI)
 // ==========================================
 const jobsData = [
-  /* 
-  -------------------------------------------------------------
-  JOB ADD KARNE KA TARIQA (SAMPLE TEMPLATE):
-  Jab koi nayi job aye, to neeche diye gaye format me add karein:
-  -------------------------------------------------------------
   {
-    id: 1,
-    title: "Assistant Director (BPS-17)",
-    department: "Federal Public Service Commission (FPSC)",
-    category: "govt",           // govt, private, it, banking, healthcare, education, remote
-    type: "Government",         // Government, Private, Remote, Internship
-    city: "Islamabad",          // Karachi, Lahore, Islamabad, Peshawar, Quetta, All Pakistan
-    scale: "BPS-17",            // Scale ya Salary e.g. "Rs. 75,000 - 95,000"
-    deadline: "30 Nov 2026",
-    education: "Master's Degree (16 Years)",
-    experience: "Fresh / 1 Year",
-    isUrgent: true,
-    applyUrl: "https://www.fpsc.gov.pk",
-    description: "Federal Government ke mukhtalif departments main Assistant Director ki asamiyaan khali hain. Pakistan bhar se umeedwar apply kar sakte hain."
+    "title": "Assistant Director (BPS-17)",
+    "department": "Federal Public Service Commission (FPSC)",
+    "category": "govt",
+    "type": "Government",
+    "city": "Islamabad",
+    "scale": "BPS-17",
+    "deadline": "30 Dec 2026",
+    "education": "Master's Degree (16 Years) / Graduation",
+    "experience": "Fresh / 1 Year",
+    "isUrgent": true,
+    "applyUrl": "https://www.fpsc.gov.pk",
+    "description": "Federal Government ke mukhtalif ministries main Assistant Director ki asamiyaan. Pakistan bhar se tamam male aur female umeedwar apply kar sakte hain.",
+    "id": 1794726235577
   },
-  -------------------------------------------------------------
-  */
+  {
+    "title": "Lecturer & Subject Specialist (BPS-17)",
+    "department": "Punjab Public Service Commission (PPSC)",
+    "category": "education",
+    "type": "Government",
+    "city": "Lahore",
+    "scale": "BPS-17",
+    "deadline": "25 Dec 2026",
+    "education": "BS / Master in relevant subject (Minimum 2nd Div)",
+    "experience": "Fresh Eligible",
+    "isUrgent": true,
+    "applyUrl": "https://www.ppsc.gop.pk",
+    "description": "Higher Education Department Punjab main mukhtalif mazameen ke Lecturers ki bharti. PPSC online portal se direct apply karein.",
+    "id": 1794726235578
+  },
+  {
+    "title": "State Bank Officers Training Scheme (OG-2)",
+    "department": "State Bank of Pakistan (SBP / BSC)",
+    "category": "banking",
+    "type": "Government",
+    "city": "Karachi",
+    "scale": "OG-2 (Rs. 95,000+)",
+    "deadline": "31 Dec 2026",
+    "education": "Master / 16 Years Degree in Business, IT, Economics, Commerce",
+    "experience": "Fresh Graduates",
+    "isUrgent": false,
+    "applyUrl": "https://www.sbp.org.pk",
+    "description": "State Bank of Pakistan main regular career opportunity. Central Bank ke zariye mukammal training aur pur-kashish package.",
+    "id": 1794726235579
+  },
+  {
+    "title": "Municipal Officer & Town Officer (BPS-16/17)",
+    "department": "Sindh Public Service Commission (SPSC)",
+    "category": "govt",
+    "type": "Government",
+    "city": "Karachi",
+    "scale": "BPS-16",
+    "deadline": "28 Dec 2026",
+    "education": "Graduation in any discipline",
+    "experience": "Fresh",
+    "isUrgent": false,
+    "applyUrl": "https://www.spsc.gov.pk",
+    "description": "Local Government Department Sindh main executive aur administrative posts. Sindh Domicile ke umeedwar SPSC ke zariye apply karein.",
+    "id": 1794726235580
+  },
+  {
+    "title": "Assistant Sub-Inspector (ASI - BPS-11)",
+    "department": "Khyber Pakhtunkhwa Police (KPPSC / ETEA)",
+    "category": "defense",
+    "type": "Government",
+    "city": "Peshawar",
+    "scale": "BPS-11",
+    "deadline": "20 Dec 2026",
+    "education": "FA / FSc / Intermediate",
+    "experience": "Physical Standards As per Police Rules",
+    "isUrgent": true,
+    "applyUrl": "https://www.kppsc.gov.pk",
+    "description": "KPK Police department main ASI ki nayi bhartiyaan. KPK ke tamam azla ke naujawan shamil ho sakte hain.",
+    "id": 1794726235581
+  },
+  {
+    "title": "Junior Software Engineer / Web Developer",
+    "department": "Pakistan Software Export Board (PSEB / Tech Partners)",
+    "category": "it",
+    "type": "Private",
+    "city": "Islamabad",
+    "scale": "Rs. 70,000 - 110,000",
+    "deadline": "31 Dec 2026",
+    "education": "BS Computer Science / Software Engineering / IT",
+    "experience": "Fresh to 1 Year (JavaScript, Python, React)",
+    "isUrgent": false,
+    "applyUrl": "https://pseb.org.pk",
+    "description": "IT industry main fresh software graduates ke liye career starter program. Remote aur on-site options dastiyab hain.",
+    "id": 1794726235582
+  }
 ];
 
 // ==========================================
