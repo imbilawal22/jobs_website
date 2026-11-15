@@ -2,7 +2,7 @@
  * ROZGAR JAWAN (روزگار جوان) - Main Interactive Logic
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initMain() {
   // 1. Mobile Menu Toggle
   const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
   const navLinks = document.getElementById('nav-links');
@@ -53,7 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMain);
+} else {
+  initMain();
+}
 
 // Toast notification helper
 function showToast(message) {

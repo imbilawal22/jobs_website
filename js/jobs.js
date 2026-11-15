@@ -438,7 +438,9 @@ function closeJobModal() {
   if (modalOverlay) modalOverlay.classList.remove('active');
 }
 
-// Initial render on page load
-document.addEventListener('DOMContentLoaded', () => {
+// Initial render on page load - executes immediately or on DOMContentLoaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderJobs);
+} else {
   renderJobs();
-});
+}

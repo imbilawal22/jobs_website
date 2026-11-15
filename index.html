@@ -528,6 +528,9 @@
     const scriptJobs = document.createElement('script');
     scriptJobs.src = 'js/jobs.js?v=' + cacheBuster;
     scriptJobs.onload = function() {
+      if (typeof renderJobs === 'function') {
+        renderJobs();
+      }
       const scriptMain = document.createElement('script');
       scriptMain.src = 'js/main.js?v=' + cacheBuster;
       document.body.appendChild(scriptMain);
