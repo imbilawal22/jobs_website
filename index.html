@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ur-PK" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rozgar Jawan | Pakistan Jobs Portal - روزگار جوان</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Rozgar Jawan - Pakistan ki latest sarkari aur private jobs ka authentic portal. FPSC, PPSC, NTS, Bank aur IT jobs ke taza tareen updates.">
+  <meta name="keywords" content="Pakistan Jobs, Govt Jobs in Pakistan, Rozgar Jawan, FPSC, PPSC, NTS Jobs, Private Jobs Karachi Lahore Islamabad">
+  <meta name="author" content="Rozgar Jawan">
+  <meta name="theme-color" content="#059669">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-notice-bar">
+    <span class="pulse-dot"></span>
+    <span>🇵🇰 پاکستان بھر کی تصدیق شدہ نوکریوں کا سب سے آسان اور تیز پورٹل</span>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="logo-badge">RJ</div>
+          <div class="brand-title">
+            <span>Rozgar Jawan</span>
+            <span class="brand-sub">Jobs In Pakistan</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#jobs" class="nav-link">Jobs Portal</a>
+          <a href="#categories" class="nav-link">Categories</a>
+          <a href="#features" class="nav-link">Kamyabi Ke Raste</a>
+          <a href="#alerts" class="nav-link">Job Alerts</a>
+        </div>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm" onclick="openPublishGuideModal()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Job Post Guide
+          </button>
+          <a href="#alerts" class="btn btn-whatsapp btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            </svg>
+            WhatsApp Alerts
+          </a>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="flag-icon">🇵🇰</span>
+          <span>Rozgar Jawan — Har Pakistani Naujawan Ka Rozgar Saathi</span>
+        </div>
+
+        <h1 class="hero-title">
+          Pakistan Main Apni Agli <span class="text-highlight">Dream Job</span> Talaash Karein
+        </h1>
+
+        <p class="hero-desc">
+          Federal, Punjab, Sindh, KPK, Balochistan ki tamam sarkari asamiyaan aur top private companies ke career updates bilkul muft.
+        </p>
+
+        <!-- Search and Filter Bar -->
+        <div class="search-wrapper">
+          <form class="search-form" id="jobs-search-form">
+            <!-- Keyword search -->
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="search-input" placeholder="Job Title, Idara ya Scale (e.g. BPS-17, Clerk)..." autocomplete="off">
+            </div>
+
+            <!-- City selector -->
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <select id="city-select">
+                <option value="all">Tamam Shehar (All Pakistan)</option>
+                <option value="Islamabad">Islamabad / Rawalpindi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Multan">Multan</option>
+                <option value="Remote">Remote / Work from Home</option>
+              </select>
+            </div>
+
+            <!-- Category selector -->
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <select id="category-select">
+                <option value="all">Tamam Categories</option>
+                <option value="govt">Sarkari (Govt / BPS)</option>
+                <option value="it">IT & Software</option>
+                <option value="banking">Banks & Finance</option>
+                <option value="education">Education & Teachers</option>
+                <option value="healthcare">Hospital & Medical</option>
+                <option value="defense">Forces (Army, Navy, PAF, Police)</option>
+                <option value="private">Private Sector</option>
+              </select>
+            </div>
+
+            <!-- Search Action Button -->
+            <button type="submit" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              Jobs Dhoondein
+            </button>
+          </form>
+        </div>
+
+        <!-- Quick Tags -->
+        <div class="quick-tags">
+          <span class="quick-tags-label">Popular Searches:</span>
+          <button class="tag-pill" data-filter-type="category" data-filter-val="govt">FPSC Jobs</button>
+          <button class="tag-pill" data-filter-type="category" data-filter-val="govt">PPSC Jobs</button>
+          <button class="tag-pill" data-filter-type="category" data-filter-val="defense">Police Bharti</button>
+          <button class="tag-pill" data-filter-type="category" data-filter-val="banking">Bank Jobs</button>
+          <button class="tag-pill" data-filter-type="city" data-filter-val="Islamabad">Islamabad</button>
+          <button class="tag-pill" data-filter-type="city" data-filter-val="Lahore">Lahore</button>
+          <button class="tag-pill" data-filter-type="city" data-filter-val="Karachi">Karachi</button>
+          <button class="tag-pill" data-filter-type="category" data-filter-val="it">Software & Tech</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Grid Section -->
+    <section class="categories-section" id="categories">
+      <div class="container">
+        <div class="categories-grid">
+          <div class="category-card" onclick="selectQuickCategory('govt')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="category-name">Federal Govt</div>
+            <div class="category-count">FPSC / NTS</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('govt')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <div class="category-name">Punjab Jobs</div>
+            <div class="category-count">PPSC Portal</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('govt')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="category-name">Sindh & Karachi</div>
+            <div class="category-count">SPSC Updates</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('govt')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="category-name">KPK & Balochistan</div>
+            <div class="category-count">KPPSC / BPSC</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('banking')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="category-name">Banking Jobs</div>
+            <div class="category-count">Commercial & Islamic</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('it')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="category-name">IT & Software</div>
+            <div class="category-count">Tech Careers</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('education')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="category-name">Teaching / Education</div>
+            <div class="category-count">Schools & Unis</div>
+          </div>
+
+          <div class="category-card" onclick="selectQuickCategory('defense')">
+            <div class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 6 12 12 16 14"></polygon>
+              </svg>
+            </div>
+            <div class="category-name">Pak Armed Forces</div>
+            <div class="category-count">Army, Navy, PAF</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Jobs Section (BLANK / EMPTY STATE BY DEFAULT AS REQUESTED) -->
+    <section class="jobs-section" id="jobs">
+      <div class="container">
+        <!-- Section Header with Filters -->
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <h2>Taza Tareen Asamiyaan (Active Jobs)</h2>
+            <p>Pakistan bhar ki verified sarkari aur private jobs ka markaz</p>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="job-filter-tabs">
+            <button class="tab-btn active" data-tab="all">Tamam Jobs</button>
+            <button class="tab-btn" data-tab="government">Sarkari (Govt)</button>
+            <button class="tab-btn" data-tab="private">Private</button>
+            <button class="tab-btn" data-tab="remote">Remote Jobs</button>
+            <button class="tab-btn" data-tab="internship">Fresh / Internships</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Jobs Container (Loaded from js/jobs.js) -->
+        <div id="jobs-container">
+          <!-- Default Empty State is automatically injected by js/jobs.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Rozgar Jawan Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-center-heading">
+          <h2>Rozgar Jawan Ki Khususiyat</h2>
+          <p>Ham Pakistani naujawano ke liye asan, shafaf aur tezi se job dhoondne ka mahol banate hain</p>
+        </div>
+
+        <div class="feature-cards-grid">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3>100% Asal Ishtiharat</h3>
+            <p>FPSC, PPSC, NTS aur official national newspapers se tasdeeq shuda jobs publish ki jati hain.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3>Direct Apply Links</h3>
+            <p>Koi faltu redirects ya mushkil steps nahi; seedha official online form ya department portal ka link.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>Deadline Reminder</h3>
+            <p>Aakhri tareekh (last date) ka wazeh notice taakay aap ki application waqt par submit ho sake.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+            </div>
+            <h3>Instant WhatsApp Alerts</h3>
+            <p>Pakistan bhar ki nayi jobs ka notification seedha aap ke mobile WhatsApp group ya channel main.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Alert CTA Banner -->
+    <section class="alert-banner-section" id="alerts">
+      <div class="container">
+        <div class="alert-banner-card">
+          <div class="alert-banner-content">
+            <h2>Koi Nayi Job Miss Mat Karein!</h2>
+            <p>Rozana Pakistan bhar ki sarkari aur top private companies ki bhartiyaan apne WhatsApp par bilkul muft hasil karein.</p>
+          </div>
+
+          <div class="alert-banner-actions">
+            <a href="https://chat.whatsapp.com" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding: 0.85rem 1.5rem; font-size: 1rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              Join WhatsApp Alerts
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Job Details Modal (Opens when user clicks on a job card details button) -->
+  <div class="modal-overlay" id="job-detail-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Job Ki Tafseelat</h3>
+        <button class="modal-close-btn" onclick="closeJobModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="job-detail-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Publish Job Helper Guide Modal -->
+  <div class="modal-overlay" id="publish-guide-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Nayi Job Kaise Publish Karein? (Admin Guide)</h3>
+        <button class="modal-close-btn" onclick="closePublishGuideModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: #475569; font-size: 0.9rem; margin-bottom: 1.25rem;">
+          Website ko clean aur fast rakhne ke liye jobs ko <code>js/jobs.js</code> file ke zariye manage kiya gaya hai.
+        </p>
+
+        <div class="guide-step" data-step="1">
+          <h4><code>js/jobs.js</code> File Kholein</h4>
+          <p>Apne project folder main <code>js/jobs.js</code> file ko kisi bhi text editor (Notepad, VS Code waghera) main open karein.</p>
+        </div>
+
+        <div class="guide-step" data-step="2">
+          <h4><code>jobsData</code> Array Main Job Ka Data Paste Karein</h4>
+          <p>Nayi job ka record is tarah add karein:</p>
+          <pre class="code-snippet"><code>{
+  id: 1,
+  title: "Computer Operator (BPS-16)",
+  department: "Health Department Punjab",
+  category: "govt",
+  type: "Government",
+  city: "Lahore",
+  scale: "BPS-16",
+  deadline: "25 Dec 2026",
+  education: "BCS / BS Computer Science",
+  isUrgent: true,
+  applyUrl: "https://ppsc.gop.pk",
+  description: "Punjab Health Department main asamiyaan khali hain."
+}</code></pre>
+        </div>
+
+        <div class="guide-step" data-step="3">
+          <h4>Save Karein Aur Website Refresh Karein</h4>
+          <p>File save karte hi website pe job card foran auto-render ho jayega aur search filters kaam karenge!</p>
+        </div>
+
+        <div style="text-align: right; margin-top: 1.5rem;">
+          <button class="btn btn-primary btn-sm" onclick="closePublishGuideModal()">Theek Hai, Samajh Gaya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-badge">RJ</div>
+            <div class="brand-title">
+              <span>Rozgar Jawan</span>
+              <span class="brand-sub">Pakistan Jobs Portal</span>
+            </div>
+          </a>
+          <p>
+            Rozgar Jawan Pakistan ka clean aur minimalist job portal hai, jahan rooz marrah ki sarkari aur private jobs shaya ki jati hain.
+          </p>
+        </div>
+
+        <!-- Col 2: Official Portals -->
+        <div class="footer-col">
+          <h4>Sarkari Commissions</h4>
+          <div class="footer-links">
+            <a href="https://www.fpsc.gov.pk" target="_blank" rel="noopener">FPSC (Federal)</a>
+            <a href="https://www.ppsc.gop.pk" target="_blank" rel="noopener">PPSC (Punjab)</a>
+            <a href="https://www.spsc.gov.pk" target="_blank" rel="noopener">SPSC (Sindh)</a>
+            <a href="https://www.kppsc.gov.pk" target="_blank" rel="noopener">KPPSC (KPK)</a>
+            <a href="https://www.bpsc.gob.pk" target="_blank" rel="noopener">BPSC (Balochistan)</a>
+            <a href="https://www.nts.org.pk" target="_blank" rel="noopener">NTS Testing Service</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#jobs">Taza Jobs</a>
+            <a href="#categories">Categories</a>
+            <a href="#features">Kamyabi Ke Raste</a>
+            <a href="#alerts">WhatsApp Alerts</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Top Locations -->
+        <div class="footer-col">
+          <h4>Top Cities</h4>
+          <div class="footer-links">
+            <a href="#jobs" onclick="selectQuickCity('Islamabad')">Islamabad Jobs</a>
+            <a href="#jobs" onclick="selectQuickCity('Lahore')">Lahore Jobs</a>
+            <a href="#jobs" onclick="selectQuickCity('Karachi')">Karachi Jobs</a>
+            <a href="#jobs" onclick="selectQuickCity('Peshawar')">Peshawar Jobs</a>
+            <a href="#jobs" onclick="selectQuickCity('Quetta')">Quetta Jobs</a>
+            <a href="#jobs" onclick="selectQuickCity('Remote')">Remote Jobs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rozgar Jawan (روزگار جوان) — All Rights Reserved.</p>
+        <div class="disclaimer-badge">
+          ⚠️ Disclaimer: Rozgar Jawan is an informational job alert portal. All job notices are gathered from official public advertisements.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Helper Quick Select Functions -->
+  <script>
+    function selectQuickCategory(cat) {
+      const select = document.getElementById('category-select');
+      if (select) {
+        select.value = cat;
+        select.dispatchEvent(new Event('change'));
+      }
+      document.getElementById('jobs').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function selectQuickCity(city) {
+      const select = document.getElementById('city-select');
+      if (select) {
+        select.value = city;
+        select.dispatchEvent(new Event('change'));
+      }
+      document.getElementById('jobs').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <!-- Core JavaScript Modules -->
+  <script src="js/jobs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

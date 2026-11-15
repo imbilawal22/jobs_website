@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ur-PK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayi Job Publish Tool | Rozgar Jawan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .admin-container {
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+    }
+    .admin-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      color: var(--text-main);
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+      background-color: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    .output-box {
+      margin-top: 1.75rem;
+      background-color: #0F172A;
+      color: #34D399;
+      padding: 1.25rem;
+      border-radius: var(--radius-sm);
+      font-family: monospace;
+      font-size: 0.85rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+      position: relative;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body style="background-color: #F8FAFC;">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-badge">RJ</div>
+          <div class="brand-title">
+            <span>Rozgar Jawan</span>
+            <span class="brand-sub">Job Publisher Helper</span>
+          </div>
+        </a>
+        <div>
+          <a href="index.html" class="btn btn-outline btn-sm">&larr; Website Pe Wapas Jayein</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-container">
+    <div class="admin-card">
+      <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <h1 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">Nayi Job Publish Form</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Yeh form fill karein, code generate karein, aur <code>js/jobs.js</code> main paste kar dein.
+        </p>
+      </div>
+
+      <form id="job-generator-form">
+        <div class="form-group">
+          <label for="post-title">Job Ka Naam (Title) *</label>
+          <input type="text" id="post-title" class="form-control" placeholder="Maslan: Assistant Director (BPS-17) ya Software Engineer" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="post-dept">Idara / Company Ka Naam *</label>
+            <input type="text" id="post-dept" class="form-control" placeholder="Maslan: FPSC, PPSC, HBL, Meezan Bank" required>
+          </div>
+          <div class="form-group">
+            <label for="post-city">Shehar (Location) *</label>
+            <input type="text" id="post-city" class="form-control" placeholder="Maslan: Islamabad, Lahore, Karachi, All Pakistan" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="post-category">Category *</label>
+            <select id="post-category" class="form-control">
+              <option value="govt">Sarkari (Govt / BPS)</option>
+              <option value="it">IT & Software</option>
+              <option value="banking">Banks & Finance</option>
+              <option value="education">Education & Teachers</option>
+              <option value="healthcare">Hospital & Medical</option>
+              <option value="defense">Forces (Army, Navy, Police)</option>
+              <option value="private">Private Sector</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="post-type">Job Type *</label>
+            <select id="post-type" class="form-control">
+              <option value="Government">Government</option>
+              <option value="Private">Private</option>
+              <option value="Remote">Remote</option>
+              <option value="Internship">Internship / Fresh</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="post-scale">Scale / Salary Package</label>
+            <input type="text" id="post-scale" class="form-control" placeholder="Maslan: BPS-17 ya Rs. 60,000 - 80,000">
+          </div>
+          <div class="form-group">
+            <label for="post-deadline">Aakhri Tareekh (Last Date) *</label>
+            <input type="text" id="post-deadline" class="form-control" placeholder="Maslan: 30 Dec 2026" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="post-education">Taleem (Education Required)</label>
+            <input type="text" id="post-education" class="form-control" placeholder="Maslan: Graduation / Master / Matric">
+          </div>
+          <div class="form-group">
+            <label for="post-apply-url">Official Apply Link</label>
+            <input type="url" id="post-apply-url" class="form-control" placeholder="https://fpsc.gov.pk">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="post-description">Job Ki Tafseelat (Description)</label>
+          <textarea id="post-description" class="form-control" rows="4" placeholder="Eligibility criteria, age limit, quota aur apply karne ka tariqa yahan likhein..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-primary">Generate Code</button>
+          <button type="reset" class="btn btn-outline">Form Clear Karein</button>
+        </div>
+      </form>
+
+      <div id="output-wrapper" style="display: none;">
+        <h3 style="margin-top: 2rem; font-size: 1.1rem; font-weight: 700;">Tayyar Code (Isay Copy Karein):</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+          Yeh code copy karein aur <code>js/jobs.js</code> file main <code>const jobsData = [ ... ]</code> ke brackets ke andar paste kar dein!
+        </p>
+        <div class="output-box" id="code-output"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById('job-generator-form');
+    const outputWrapper = document.getElementById('output-wrapper');
+    const codeOutput = document.getElementById('code-output');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const jobObj = {
+        id: Date.now(),
+        title: document.getElementById('post-title').value.trim(),
+        department: document.getElementById('post-dept').value.trim(),
+        category: document.getElementById('post-category').value,
+        type: document.getElementById('post-type').value,
+        city: document.getElementById('post-city').value.trim(),
+        scale: document.getElementById('post-scale').value.trim(),
+        deadline: document.getElementById('post-deadline').value.trim(),
+        education: document.getElementById('post-education').value.trim(),
+        applyUrl: document.getElementById('post-apply-url').value.trim() || '#',
+        description: document.getElementById('post-description').value.trim()
+      };
+
+      const codeString = `  {\n` +
+        `    id: ${jobObj.id},\n` +
+        `    title: "${jobObj.title}",\n` +
+        `    department: "${jobObj.department}",\n` +
+        `    category: "${jobObj.category}",\n` +
+        `    type: "${jobObj.type}",\n` +
+        `    city: "${jobObj.city}",\n` +
+        `    scale: "${jobObj.scale}",\n` +
+        `    deadline: "${jobObj.deadline}",\n` +
+        `    education: "${jobObj.education}",\n` +
+        `    applyUrl: "${jobObj.applyUrl}",\n` +
+        `    description: "${jobObj.description.replace(/"/g, '\\"')}"\n` +
+        `  },`;
+
+      codeOutput.textContent = codeString;
+      outputWrapper.style.display = 'block';
+      outputWrapper.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
