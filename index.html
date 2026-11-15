@@ -11,6 +11,9 @@
   <meta name="keywords" content="Pakistan Jobs, Govt Jobs in Pakistan, Rozgar Jawan, FPSC, PPSC, NTS Jobs, Private Jobs Karachi Lahore Islamabad">
   <meta name="author" content="Rozgar Jawan">
   <meta name="theme-color" content="#059669">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -272,7 +275,7 @@
         <!-- Section Header with Filters -->
         <div class="section-header">
           <div class="section-title-wrap">
-            <h2>Taza Tareen Asamiyaan (Active Jobs)</h2>
+            <h2>Taza Tareen Asamiyaan (Active Jobs) <span id="job-count-badge" class="badge badge-govt" style="vertical-align: middle; font-size: 0.8rem; margin-left: 0.5rem;"></span></h2>
             <p>Pakistan bhar ki verified sarkari aur private jobs ka markaz</p>
           </div>
 
@@ -518,8 +521,18 @@
     }
   </script>
 
-  <!-- Core JavaScript Modules -->
-  <script src="js/jobs.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Core JavaScript Modules with Auto Cache-Busting -->
+  <script>
+    // Automatically busts browser cache so newly published jobs always show up immediately
+    const cacheBuster = Date.now();
+    const scriptJobs = document.createElement('script');
+    scriptJobs.src = 'js/jobs.js?v=' + cacheBuster;
+    scriptJobs.onload = function() {
+      const scriptMain = document.createElement('script');
+      scriptMain.src = 'js/main.js?v=' + cacheBuster;
+      document.body.appendChild(scriptMain);
+    };
+    document.body.appendChild(scriptJobs);
+  </script>
 </body>
 </html>
