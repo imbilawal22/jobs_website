@@ -24,7 +24,7 @@ const jobsData = [
     "isUrgent": true,
     "applyUrl": "https://www.fpsc.gov.pk",
     "description": "Federal Government ke mukhtalif ministries main Assistant Director ki asamiyaan. Pakistan bhar se tamam male aur female umeedwar apply kar sakte hain.",
-    "id": 1795294188237
+    "id": 1795344640963
   },
   {
     "title": "Lecturer & Subject Specialist (BPS-17)",
@@ -39,7 +39,7 @@ const jobsData = [
     "isUrgent": true,
     "applyUrl": "https://www.ppsc.gop.pk",
     "description": "Higher Education Department Punjab main mukhtalif mazameen ke Lecturers ki bharti. PPSC online portal se direct apply karein.",
-    "id": 1795294188238
+    "id": 1795344640964
   },
   {
     "title": "State Bank Officers Training Scheme (OG-2)",
@@ -54,7 +54,7 @@ const jobsData = [
     "isUrgent": false,
     "applyUrl": "https://www.sbp.org.pk",
     "description": "State Bank of Pakistan main regular career opportunity. Central Bank ke zariye mukammal training aur pur-kashish package.",
-    "id": 1795294188239
+    "id": 1795344640965
   },
   {
     "title": "Municipal Officer & Town Officer (BPS-16/17)",
@@ -69,7 +69,7 @@ const jobsData = [
     "isUrgent": false,
     "applyUrl": "https://www.spsc.gov.pk",
     "description": "Local Government Department Sindh main executive aur administrative posts. Sindh Domicile ke umeedwar SPSC ke zariye apply karein.",
-    "id": 1795294188240
+    "id": 1795344640966
   },
   {
     "title": "Assistant Sub-Inspector (ASI - BPS-11)",
@@ -84,7 +84,7 @@ const jobsData = [
     "isUrgent": true,
     "applyUrl": "https://www.kppsc.gov.pk",
     "description": "KPK Police department main ASI ki nayi bhartiyaan. KPK ke tamam azla ke naujawan shamil ho sakte hain.",
-    "id": 1795294188241
+    "id": 1795344640967
   },
   {
     "title": "Junior Software Engineer / Web Developer",
@@ -99,7 +99,7 @@ const jobsData = [
     "isUrgent": false,
     "applyUrl": "https://pseb.org.pk",
     "description": "IT industry main fresh software graduates ke liye career starter program. Remote aur on-site options dastiyab hain.",
-    "id": 1795294188242
+    "id": 1795344640968
   }
 ];
 
